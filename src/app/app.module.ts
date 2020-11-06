@@ -3,14 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import { HomePageComponent } from './home-page/home-page.component';
+import { HomePageModule } from './home-page/home-page.module';
+
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
+	declarations: [
+		AppComponent,
+	],
+	imports: [
+		BrowserModule, 
+		HomePageModule,
+	],
+	providers: [],
+	bootstrap: [AppComponent]
+	})
+export class AppModule {}
