@@ -31,7 +31,8 @@ import { IvyCarouselModule } from 'angular-responsive-carousel';
 		IvyCarouselModule
 	],
 	exports: [
-		HomeComponent
+		HomeComponent,
+		WhyHireUsComponent,
 	],
 })
 export class HomeModule {}

@@ -1,0 +1,101 @@
+<div class="col-xs-12 col-sm-12 col-md-6">
+    <div class="full-width blog-section box-shadow1">
+        <div style="overflow: hidden;" class="full-width center">
+            <figure>
+                <img data-aos="zoom-in" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-once="true" src="assets/images/react.png" alt="react" title="react">
+            </figure>
+        </div>
+        <span data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease-out" data-aos-delay="600" data-aos-once="true" class="center img-caption">React JS</span>
+        <div style="overflow: hidden;" class="full-width blog-desc">
+            <h4>An introduction to the React view library</h4>
+            <p data-aos="fade-down" data-aos-duration="600" data-aos-easing="ease-in" data-aos-once="true" >
+                React is a JavaScript library that aims to simplify development of visual interfaces.
+            </p>
+            <p data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in" data-aos-delay="500" data-aos-once="true" >
+                Developed at Facebook and released to the world in 2013, it drives some of the most widely used apps, powering Facebook and Instagram among countless other applications.
+            </p>
+            <h4>Is React simple to learn?</h4>
+            <p data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in" data-aos-once="true" >
+                Even though I said that React is simpler than alternative frameworks, diving into React is still complicated, but mostly because of the corollary technologies that can be integrated with React, like Redux and GraphQL.
+            </p>
+            <p data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in" data-aos-once="true" >
+                React in itself has a very small API, and you basically need to understand 4 concepts to get started:
+            </p>
+            <ul>
+                <li data-aos-once="true" data-aos="zoom-in" data-aos-duration="800" data-aos-easing="ease-in-out-sine" >Components</li>
+                <li data-aos-once="true" data-aos="zoom-in" data-aos-duration="800" data-aos-easing="ease-in-out-sine" >JSX</li>
+                <li data-aos-once="true" data-aos="zoom-in" data-aos-duration="800" data-aos-easing="ease-in-out-sine" >State</li>
+                <li data-aos-once="true" data-aos="zoom-in" data-aos-duration="800" data-aos-easing="ease-in-out-sine" >Props</li>
+            </ul>
+            <h4>How to install React on your development computer</h4>
+            <p data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in" data-aos-once="true" >
+                React is a library, so saying install might sound a bit weird. Maybe setup is a better word, but you get the concept.
+            </p>
+            <p data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in" data-aos-once="true" >
+                There are various ways to setup React so that it can be used on your app or site.
+            </p>
+            <h4>Load React directly in the web page</h4>
+            <p data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in" data-aos-once="true" >
+                The simplest one is to add the React JavaScript file into the page directly. This is best when your React app will interact with the elements present on a single page, and not actually controls the whole navigation aspect.
+            </p>
+            <p data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in" data-aos-once="true" >
+                In this case, you add 2 script tags to the end of the <span>body</span> tag:
+            </p>
+            <p data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in" data-aos-once="true" >
+                Here we loaded both React and React DOM. Why 2 libraries? Because React is 100% independent from the browser and can be used outside it (for example on Mobile devices with React Native). Hence the need for React DOM, to add the wrappers for the browser.
+            </p>
+            <p data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in" data-aos-once="true" >
+                After those tags you can load your JavaScript files that use React, or even inline JavaScript in a <span>script</span> tag:
+            </p>
+            <p data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in" data-aos-once="true" >To use JSX you need an extra step: load Babel</p>
+            <p data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in" data-aos-once="true" >
+                and load your scripts with the special <span>text/babel</span> MIME type:
+            </p>
+            <p data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in" data-aos-once="true" >
+                Now you can add JSX in your app.js file:
+            </p>
+            <h4>Using <span>var</span></h4>
+            <p data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in" data-aos-once="true" >
+                Until ES2015, <span>var</span> was the only construct available for defining variables.
+            </p>
+            <span class="full-width code-demo">var a = 0</span>
+            <p data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in" data-aos-once="true" >
+                If you forget to add <span>var</span> you will be assigning a value to an undeclared variable, and the results might vary.
+            </p>
+            <p data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in" data-aos-once="true" >
+                If you don’t initialize the variable when you declare it, it will have the <span>undefined</span> value until you assign a value to it.
+            </p>
+            <span class="full-width code-demo">var a //typeof a === 'undefined'</span>
+            <p data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in" data-aos-once="true" >
+                You can redeclare the variable many times, overriding it:
+            </p>
+            <div class="full-width code-demo">
+                <span class="full-width">var a = 1</span>
+                <span class="full-width">var a = 2</span>
+            </div>
+            <p data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in" data-aos-once="true" >
+                You can also declare multiple variables at once in the same statement:
+            </p>
+            <span class="full-width code-demo">
+                var a = 1, b = 2jsx
+            </span>
+            <h4>Using <span>let</span></h4>
+            <p data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in" data-aos-once="true" >
+                <span>Let</span> is a new feature introduced in ES2015 and it's essentially a block scoped version of <span>var</span>. Its scope is limited to the block, statement or expression where it's defined, and all the contained inner blocks.
+            </p>
+            <h4>Using <span>const</span></h4>
+            <p data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in" data-aos-once="true" >
+                Variables declared with <span>var</span> or <span>let</span> can be changed later on in the program, and reassigned. Once a <span>const</span> is initialized, its value can never be changed again, and it can't be reassigned to a different value.
+            </p>
+            <span class="full-width code-demo">
+                const a = 'test'
+            </span>
+            <h4>Arrow functions</h4>
+            <p data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in" data-aos-once="true" >
+                Arrow functions were introduced in ES6 / ECMAScript 2015, and since their introduction they changed forever how JavaScript code looks (and works).
+            </p>
+            <span data-aos="zoom-out" data-aos-duration="700" data-aos-easing="ease-out-sine" data-aos-once="true" class="written-by">- Shiv Kumar</span>
+            <a href="https://vuejs.org/v2/guide/"  target="_blank" class="btn link-btn">Read Doc.</a>
+        </div>
+    </div>
+</div>
